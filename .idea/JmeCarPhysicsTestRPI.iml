@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id="JmeCarPhysicsTestRPI" external.linked.project.path="$MODULE_DIR$" external.root.project.path="$MODULE_DIR$" external.system.id="GRADLE" external.system.module.group="com.scrappers" external.system.module.version="3.0-TestCase" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/build/classes/java/main" />
+    <output-test url="file://$MODULE_DIR$/build/classes/java/test" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/resources" type="java-test-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/build" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Gradle: org.jmonkeyengine:jme3-lwjgl3:3.3.2-stable" level="project" />
+    <orderEntry type="library" name="Gradle: org.jmonkeyengine:jme3-desktop:3.3.2-stable" level="project" />
+    <orderEntry type="library" name="Gradle: com.github.stephengold:Minie:3.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.github.stephengold:Heart:6.2.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.jmonkeyengine:jme3-terrain:3.3.2-stable" level="project" />
+    <orderEntry type="library" name="Gradle: org.jmonkeyengine:jme3-core:3.3.2-stable" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-glfw:3.2.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-glfw:3.2.3:natives-windows" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-glfw:3.2.3:natives-linux" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-glfw:3.2.3:natives-macos" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-jemalloc:3.2.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-jemalloc:3.2.3:natives-windows" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-jemalloc:3.2.3:natives-linux" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-jemalloc:3.2.3:natives-macos" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-openal:3.2.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-openal:3.2.3:natives-windows" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-openal:3.2.3:natives-linux" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-openal:3.2.3:natives-macos" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-opencl:3.2.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-opengl:3.2.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-opengl:3.2.3:natives-windows" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-opengl:3.2.3:natives-linux" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-opengl:3.2.3:natives-macos" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl:3.2.3:natives-linux-arm32" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl:3.2.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl:3.2.3:natives-windows" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl:3.2.3:natives-linux" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl:3.2.3:natives-macos" level="project" />
+    <orderEntry type="library" name="Gradle: com.github.Scrappers-glitch:JoystickModule:1.0.9R" level="project" />
+    <orderEntry type="library" name="Gradle: com.pi4j:pi4j-device:1.2" level="project" />
+    <orderEntry type="library" name="Gradle: com.pi4j:pi4j-gpio-extension:1.2" level="project" />
+    <orderEntry type="library" name="Gradle: com.pi4j:pi4j-core:1.2" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: junit:junit:4.12" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.hamcrest:hamcrest-core:1.3" level="project" />
+  </component>
+</module>

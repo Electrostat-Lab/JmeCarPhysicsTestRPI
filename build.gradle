@@ -1,0 +1,50 @@
+plugins {
+    id 'java'
+}
+
+group 'com.scrappers'
+version '3.0-TestCase'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    /*add repositories of jcenter,bintray,jtpack.io*/
+    jcenter()
+    maven { url 'https://jitpack.io' }
+
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    
+    /**jme3 core libraries from jcenter & Miniev3.1.0 for arm32 or armhf or armv7l or cortex-A(application)72 that runs on raspiberry pi4 model b*/
+    
+    implementation "org.jmonkeyengine:jme3-core:3.3.2-stable"
+    implementation "org.jmonkeyengine:jme3-lwjgl3:3.3.2-stable"
+    implementation "org.jmonkeyengine:jme3-desktop:3.3.2-stable"
+    implementation 'com.github.stephengold:Minie:3.1.0'
+    
+    /**don't forget this in order to extract the native library lwjgllib-arm32 for arm32 linux raspiOS*/
+    
+    implementation "org.lwjgl:lwjgl:3.2.3:natives-linux-arm32"
+
+    /** if you encounter any problem w/ extraction of .so object files or native libraries of other lwjgl component please add what's missing from lwjgl repositories
+    *   implementation "org.lwjgl:lwjgl-glfw:3.2.3:natives-linux-arm32"
+    *   implementation "org.lwjgl:lwjgl-opengl:3.2.3:natives-linux-arm32"
+    *   implementation "org.lwjgl:lwjgl-openal:3.2.3:natives-linux-arm32"
+    *   implementation "org.lwjgl:lwjgl-jemalloc:3.2.3:natives-linux-arm32"
+    */
+
+    /**if you will use GPIO Joystick module to control anything */
+    
+    implementation 'com.github.Scrappers-glitch:JoystickModule:1.0.9R'
+    
+    /**or if you will use Pi4J gradle implemented from wPi native library
+     * 
+     *     implementation "com.pi4j:pi4j-core:1.2"
+     *     implementation "com.pi4j:pi4j-gpio-extension:1.2"
+     *     implementation "com.pi4j:pi4j-device:1.2"
+     * 
+     * */
+}
