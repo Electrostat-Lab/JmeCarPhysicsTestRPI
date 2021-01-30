@@ -28,9 +28,11 @@ import com.pi4j.io.gpio.PinPullResistance;
 import com.pi4j.io.gpio.RaspiPin;
 import com.pi4j.io.spi.SpiChannel;
 import java.io.IOException;
-/**JmeCarGame using RaspiberryPi GPIO Joystick Module with the help of ADC-MCP3008 & pi4J library
+/**
+ * JmeCarGame using RaspiberryPi GPIO Joystick Module with the help of ADC-MCP3008 & pi4J library
  * check : JoyStickModuleLibrary:
  * pi4J GPIO from wPI native ; ${}
+ *
  * */
 public class GPIOJmeCarTest extends SimpleApplication {
 

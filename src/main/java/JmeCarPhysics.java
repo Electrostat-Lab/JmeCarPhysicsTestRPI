@@ -22,7 +22,10 @@ import com.jme3.scene.Node;
 import com.jme3.scene.shape.Box;
 import com.jme3.scene.shape.Cylinder;
 import com.jme3.scene.shape.Sphere;
-/**Jme bare bone car Physics test*/
+/**
+ * Jme bare bone car Physics test
+ *
+ * */
 public class JmeCarPhysics extends SimpleApplication implements ActionListener {
 
     private BulletAppState bulletAppState;

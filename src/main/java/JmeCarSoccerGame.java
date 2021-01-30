@@ -30,7 +30,11 @@ import com.jme3.texture.Texture;
 import com.jme3.util.SkyFactory;
 
 /**
- * JmeCarPhysics fullTest using jme3core , lwjgl-input , minie for RPI devices with geometeries, materials,shaders,lights,physics,skybox,car physics & rigidphysics.
+ * JmeCarPhysics fullTest using jme3core ,
+ * lwjgl-input ,
+ * minie for RPI devices with geometeries,
+ * materials,shaders,lights,physics,skybox,car physics & rigidphysics.
+ *
  */
 public class JmeCarSoccerGame extends SimpleApplication implements ActionListener {
 

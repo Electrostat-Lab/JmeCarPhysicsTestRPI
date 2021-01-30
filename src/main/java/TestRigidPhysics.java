@@ -9,7 +9,11 @@ import com.jme3.math.Vector3f;
 import com.jme3.scene.Node;
 import com.jme3.scene.shape.Sphere;
 
-/** Test Jme Physics */
+/**
+ *
+ * Test Jme Physics
+ *
+ * */
 public class TestRigidPhysics extends SimpleApplication {
     private BulletAppState bulletAppState;
     public static void main(String[] args) {
