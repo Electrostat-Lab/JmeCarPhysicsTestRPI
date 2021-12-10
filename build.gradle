@@ -4,15 +4,16 @@ plugins {
 
 group 'com.scrappers'
 version '3.0-TestCase'
-
 sourceCompatibility = 1.8
+mainClassName = 'GPIOJmeCarTest'
+String dependenciesString = ""
+
 
 repositories {
     mavenCentral()
     /*add repositories of jcenter,bintray,jtpack.io*/
     jcenter()
     maven { url 'https://jitpack.io' }
-
 }
 
 dependencies {
@@ -47,4 +48,41 @@ dependencies {
      *     implementation "com.pi4j:pi4j-device:1.2"
      * 
      * */
+}
+task copyJars(type: Copy) {
+    from (sourceSets.main.runtimeClasspath){
+        include '**/*.jar'
+    }
+    from(sourceSets.main.compileClasspath){
+        include '**/*.jar'
+    }
+    into('build/libs/dependencies')
+    includeEmptyDirs = false
+    setDuplicatesStrategy(DuplicatesStrategy.EXCLUDE)
+}
+/**
+ * Better approach described below, but the 2 of them are vial ones
+ */
+task createJar(type : Jar, dependsOn : copyJars){
+    //get the copied jars
+    final String project = rootDir.getPath()
+    final File dependencies = new File(project + "/build/libs/dependencies/")
+    if(dependencies.exists()) {
+        if (dependencies.listFiles().length > 0) {
+            final File[] files = dependencies.listFiles()
+            for (int i = 0; i < files.length; i++) {
+                final String fileName = files[i].getName()
+                if (fileName.contains(".jar")) {
+                    dependenciesString += "dependencies/" + fileName + " "
+                }
+            }
+        }
+    }
+    manifest{
+        attributes('Main-Class': mainClassName)
+        //pass the jars to the manifest
+        attributes('Class-Path' : dependenciesString)
+        attributes('Created-By' : 'JmeCarPhysics')
+    }
+    with jar
 }
